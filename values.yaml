@@ -6,3 +6,11 @@ projects:
       destinations:
         - namespace: wooglife
           server: "https://kubernetes.default.svc"
+  - name: mgmt
+    spec:
+      sourceRepos:
+      - "https://github.com/OpenAlcoholics/*"
+      - "https://github.com/torbencarstens/*"
+      destinations:
+        - namespace: mgmt
+          server: "https://kubernetes.default.svc"
