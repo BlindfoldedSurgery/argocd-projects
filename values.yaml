@@ -20,3 +20,5 @@ projects:
           server: "https://kubernetes.default.svc"
         - namespace: kube-system
           server: "https://kubernetes.default.svc"
+        - namespace: cattle-system
+          server: "https://kubernetes.default.svc"
