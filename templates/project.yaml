@@ -13,8 +13,6 @@ spec: {{ toYaml .spec | nindent 2 }}
       {{ toYaml .spec.destinations | nindent 4 }}
     {{- end }}
   namespaceResourceWhitelist:
-  {{- range .spec.destinations }}
     - group: "*"
       kind: "*"
-  {{- end }}
 {{- end }}
