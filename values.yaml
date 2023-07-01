@@ -3,3 +3,5 @@ projects:
     spec:
       destinations:
       - namespace: wooglife
+      sourceRepos:
+      - "https://github.com/woog-life/*"
