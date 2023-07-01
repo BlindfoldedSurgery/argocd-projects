@@ -3,3 +3,6 @@ projects:
     spec:
       sourceRepos:
       - "https://github.com/woog-life/*"
+      destinations:
+        - namespace: wooglife
+          server: "https://kubernetes.default.svc"
