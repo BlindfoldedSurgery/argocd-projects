@@ -1,4 +1,4 @@
-{{- range .Values.projects -}}
+{{- range .Values.projects }}
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
@@ -8,8 +8,8 @@ metadata:
 spec: {{ toYaml .spec | nindent 2 }}
   destinations:
     - namespace: argocd
-      server: "https://kubernetes.default.svc"
+      server: https://kubernetes.default.svc
     {{- if .spec.destinations -}}
-    {{ toYaml .spec.destinations | nindent 4 }}
+      {{ toYaml .spec.destinations | nindent 4 }}
     {{- end -}}
-{{- end -}}
+{{- end }}
