@@ -11,5 +11,9 @@ spec: {{ toYaml .spec | nindent 2 }}
       server: https://kubernetes.default.svc
     {{- if .spec.destinations -}}
       {{ toYaml .spec.destinations | nindent 4 }}
-    {{- end -}}
+    {{- end }}
+  namespaceResourceWhitelist:
+  {{- range .spec.destinations }}
+    - {{ .namespace }}
+  {{- end }}
 {{- end }}
