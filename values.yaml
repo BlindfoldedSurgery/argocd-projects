@@ -1,0 +1,5 @@
+projects:
+  - name: wooglife
+    spec:
+      destinations:
+      - namespace: wooglife
