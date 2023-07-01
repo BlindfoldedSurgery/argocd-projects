@@ -15,4 +15,7 @@ spec: {{ toYaml .spec | nindent 2 }}
   namespaceResourceWhitelist:
     - group: "*"
       kind: "*"
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
 {{- end }}
