@@ -8,6 +8,5 @@ metadata:
 spec: {{ toYaml .spec | nindent 2 }}
   destinations:
     - namespace: argocd
-      server:
-      - "https://kubernetes.default.svc"
+      server: "https://kubernetes.default.svc"
 {{- end -}}
