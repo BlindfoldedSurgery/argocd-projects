@@ -7,11 +7,8 @@ metadata:
   namespace: {{ .namespace | default "argocd" }}
 spec: {{ toYaml .spec | nindent 2 }}
   destinations:
-    - namespace: argocd
-      server: https://kubernetes.default.svc
-    {{- if .spec.destinations -}}
-      {{ toYaml .spec.destinations | nindent 4 }}
-    {{- end }}
+    - namespace: '*'
+      server: '*'
   namespaceResourceWhitelist:
     - group: "*"
       kind: "*"
