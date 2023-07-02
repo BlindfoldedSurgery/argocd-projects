@@ -22,3 +22,9 @@ projects:
           server: "https://kubernetes.default.svc"
         - namespace: cattle-system
           server: "https://kubernetes.default.svc"
+        - namespace: istio-system
+          server: "https://kubernetes.default.svc"
+        - namespace: postgres-operator
+          server: "https://kubernetes.default.svc"
+        - namespace: observability
+          server: "https://kubernetes.default.svc"
