@@ -9,5 +9,5 @@ projects:
   - name: mgmt
     spec:
       sourceRepos:
-      - "https://github.com/OpenAlcoholics/*"
+      - "https://github.com/BlindfoldedSurgery/*"
       - "https://github.com/torbencarstens/*"
